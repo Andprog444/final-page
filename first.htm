@@ -4,11 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Naujienos</title>
 </head>
+<style>
+    * {
+            box-sizing: border-box;
+        }
+    /* DESKTOP */
+    @media screen and (min-width: 600px){
+        .container{
+             gap:20px;
+         }
+
+    }
+     /* MOBILE */
+     @media screen and (max-width: 600px){
+         .container{
+             gap:10px;
+             /* flex-direction: column; */
+             width: 35%;
+         }
+
+     }
+     /* BOTH */
+     
+     header > div{
+         font-size: 2rem;
+         position: relative;
+         padding-top: 40px;
+         text-align: center;
+         color: gainsboro;
+         text-transform: capitalize;
+         
+     }
+     header > img{
+         width: 100%;
+         position: absolute;
+         z-index: -1;
+         
+
+
+     }
+     body{
+         margin: 0px;
+         background-color: gainsboro;
+     }
+     button{
+         /* border-radius: 10px; */
+     }
+     .container{
+         display: flex;
+         margin: 0px;
+         padding-top: 40px;
+            
+     }
+     .container, a:link, a:visited{
+         
+         color: black;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+         text-decoration: none;
+         font-size: 1.5rem;
+         
+     }
+     footer{
+         color: grey;
+         font-size: 0.8rem;
+         position: absolute;
+         top: 100%;
+         padding-left: 50px;
+     }
+     
+
+    
+
+</style>
 <body>
-    <head></head>
+    <header><img src="./images/light.jpg" alt="Logo"><div>Apšvietimo sprendimai jums</div></header>
+    <menu class="container">
+        <button><a href="#">Apie</a></button>
+        <button><a href="#">Katalogas</a></button>
+        <button><a href="#">Kontaktai</a></button>
+    </menu>
     <main></main>
-    <footer></footer>
+    <footer> Copyright &reg 2021 AB</footer>
 </body>
 </html>

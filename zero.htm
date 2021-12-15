@@ -6,58 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+                /* DESKTOP */
+        @media screen and (min-width: 600px){
+           body{
+               background-image:url(./images/Kuriamas.jpg);
+           }
+           #header{
+                color: grey;
+                font-size: 4.5rem;
+                text-shadow:2px 2px 0 #444;
+            }
+            #info{
+                font-size: 3rem;
+                text-shadow: 2px 2px 0 #444;
+                top: 67%;
+            }
+            #next-page:link, :visited{
+                font-size: 3rem;
+                text-shadow: 2px 2px 0 #444;
+                top: 87%;
+            }
+
+
+    }
+                /* MOBILE */
+        @media screen and (max-width: 600px){
+            body{
+                display: inline;
+                margin: 0px;
+                background-color: lightgrey;
+                background-image:url(./images/plytos.jpg);
+            }
+            #header{
+                color: black;
+                font-size: 2rem;
+                text-shadow:1px 1px 0 #444;
+                background-color: lightgrey;
+            }
+            #info{
+                font-size: 2rem;
+                text-shadow: 1px 1px 0 #444;
+                top: 40%;
+                background-color: lightgrey;
+            }
+            #next-page:link, :visited{
+                font-size: 2rem;
+                text-shadow: 1px 1px 0 #444;
+                top: 60%;
+                background-color: lightgrey;
+            }
+
+    }
+
+            /* BOTH */
         body{
             margin: 0px;
-            height: 500px;
-            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(42, 46, 45, 0.418));
         }
-        #header{
-            color: grey;
-            /* text-align: center; */
-            font-size: 5rem;
-            /* padding-top: 200px; */
-        }
-        #img-cmp{
-            width: 90%;
-            /* align-items: center; */
-            position: absolute;
-            left: 5%;
-
-            /* z-index: -10; */
-            
-
-            
-        }
+        
         #header{
             position: absolute;
             z-index: 2;
-            left: 6%;
+            left: 10%;
             top: 15%;
             font-weight: bold;
-            text-shadow:2px 2px 0 #444;
-            
-
 
         }
         #info{
             position: absolute;
             z-index: 2;
             left: 10%;
-            top: 87%;
             font-weight: bold;
-            font-size: 3rem;
-            text-shadow:2px 2px 0 #444;
+            
         }
         #next-page:link, :visited{
             color: black;
             text-decoration: none;
             position: absolute;
             z-index: 2;
-            left: 60%;
-            top: 87%;
+            left: 55%;
             font-weight: bold;
-            font-size: 3rem;
-            text-shadow:2px 2px 0 #444;
+            
         }
         #next-page:hover,:active{
             color: grey;
@@ -66,10 +94,12 @@
     </style>
 </head>
 <body>
-    <img id="img-cmp" src="./images/im-163756.jpg" alt="dirbam-darom">
-    <div id="header">Darbai vyksta - niekas nepyksta!</div>
+    <!-- <img id="img-cmp" src="./images/Kuriamas.jpg" alt="dirbam-darom"> -->
+    <div id="header">
+        <div>Darbai vyksta - niekas nepyksta!</div>
+    </div>
     <div id="info">Jau greitai....</div>
-    <a id="next-page" href="#">...o dabar spausk čia</a>
+    <a id="next-page" href="first.htm">...o dabar laukiame čia!</a>
     
 </body>
 </html>
